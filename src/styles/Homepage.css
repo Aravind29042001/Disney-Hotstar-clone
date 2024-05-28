@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "swiper/css";
+@import "swiper/css/navigation";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.Disney-logo {
+  height: 70px;
+  width: 100px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 10px;
+  position: absolute;
+  z-index: 1;
+}
+
+.sub-btn {
+  color: rgb(186, 165, 25);
+  border-radius: 10px;
+  border: none;
+  background-color: rgba(61, 59, 57, 0.67);
+  cursor: pointer;
+  margin-left: 25px;
+  margin-top: 80px;
+  position: absolute;
+  padding: 2px;
+  z-index: 1;
+}
+
+.black-bg {
+  background-color: black;
+  width: 100%;
+}
+
+.material-symbols-outlined {
+  color: rgba(255, 255, 255, 0.463);
+  margin-top: 35px;
+  margin-left: 30px;
+  padding: 5px;
+}
+
+.material-symbols-outlined:hover {
+  color: white;
+  padding: 5px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 170px;
+  position: fixed;
+}
+
+.icon-letter {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.My-Show-word {
+  position: absolute;
+  top: 43px;
+  left: 60px;
+
+  font-family: "Noto Sans", sans-serif;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.change {
+  position: relative;
+  overflow: hidden;
+}
+
+.material-symbols-outlined,
+.My-Show-word {
+  transition: transform 0.3s ease;
+}
+
+.icon-letter:hover .material-symbols-outlined {
+  transform: translateX(5px);
+}
+
+.icon-letter:hover .My-Show-word {
+  transform: translateX(5px);
+}
+
+.movie-images {
+  margin-left: 150px;
+  position: relative;
+  bottom: 100px;
+  overflow: hidden;
+}
+
+.movie-images1 {
+  margin-left: 150px;
+  position: relative;
+  bottom: 100px;
+  overflow: hidden;
+}
+
+.img {
+  width: 200px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+.img1 {
+  width: 200px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.img:hover {
+  width: 240px;
+  height: 290px;
+  transform: scale(1.1);
+  z-index: 1;
+  position: relative;
+}
+.img1:hover {
+  width: 240px;
+  height: 290px;
+  transform: scale(1.1);
+  z-index: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.first-img {
+  width: 100%;
+  position: absolute;
+  right: 0px;
+}
+
+.image-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+.newimg {
+  width: 100%;
+  height: 700px;
+  background-image: url("https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/219/1640219-i-0ddf00e2e915");
+  background-size: cover;
+  background-position: center center;
+  padding: 150px 200px;
+  box-sizing: border-box;
+  box-shadow: inset 20px 0 60px 50px black;
+}
+
+.overall-img {
+  position: fixed;
+  top: 20px;
+  left: 5px;
+}
+
+#t {
+  white-space: nowrap;
+}
+
+.latest-text {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: white;
+  padding: 10px;
+}
+
+.black-color-bg {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+
+.fail-text {
+  position: absolute;
+  left: 150px;
+  bottom: 210px;
+  color: white;
+  font-family: "Noto Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.fail-text img {
+  height: 150px;
+  width: 150px;
+  position: relative;
+  right: 5px;
+}
+
+.fail-text button {
+  width: 360px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgba(65, 63, 63, 0.455);
+}
+
+@media only screen and (max-width: 600px) {
+  .black-bg {
+    height: 670px;
+  }
+
+  .newimg {
+    height: 500px;
+  }
+
+  .fail-text img {
+    margin-bottom: 355px;
+    margin-left: 270px;
+    height: 80px;
+    width: 80px;
+  }
+
+  .fail-text h3 {
+    display: none;
+  }
+
+  .fail-text p {
+    display: none;
+  }
+
+  .fail-text button {
+    position: relative;
+    bottom: 40px;
+    left: 100px;
+    width: 230px;
+    height: 40px;
+  }
+
+  .movie-images {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 70px;
+    position: relative;
+    bottom: 160px;
+  }
+
+  .img {
+    height: 70px;
+    width: 60px;
+    object-fit: cover;
+  }
+}
+
+/* 
+@media only screen and (max-width: 600px) {
+
+    .black-bg{
+        width: 50px;
+        height: 100vh;
+    }
+    .Disney-logo {
+        height: 50px;
+        width: 80px;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+
+    .sub-btn {
+        margin-left: 10px;
+        margin-top: 60px;
+    }
+
+    .icons {
+        top: 120px;
+    }
+
+    .icon-letter {
+        margin-bottom: 10px;
+    }
+
+    .movie-images {
+        
+        margin-left: 40px;
+        
+        
+    }
+
+    .img{
+        height: 100px;
+    }
+
+    .fail-text h3 {
+        display: none;
+    }
+
+    .fail-text p {
+        display: none;
+    }
+    .fail-text img {
+       
+    }
+} */
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+}
+
+@media only screen and (min-width: 1025px) {
+}
